@@ -17,7 +17,8 @@ PKG_BUILD_DIR := $(BUILD_DIR)/$(PKG_NAME)
 #include $(INCLUDE_DIR)/package.mk
 
 define Package/defaultsettings
-  CATEGORY:=System SET
+  SECTION:=utils
+  CATEGORY:=Utilities
   TITLE:=Openwrt support for Default Settings
   PKGARCH:=all
   DEPENDS:=+luci-base +luci +luci-compat +@LUCI_LANG_zh-cn +nano
