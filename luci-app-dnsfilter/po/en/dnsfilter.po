@@ -1,0 +1,104 @@
+msgid "Base Setting"
+msgstr ""
+
+msgid "Support AdGuardHome/Host/DNSMASQ/Domain Rules"
+msgstr ""
+
+msgid "RUNNING"
+msgstr ""
+
+msgid "NOT RUNNING"
+msgstr ""
+
+msgid "Enable"
+msgstr ""
+
+msgid "Block Apple iOS OTA update"
+msgstr ""
+
+msgid "Block CNshort APP and Website"
+msgstr ""
+
+msgid "Enable automatic update rules"
+msgstr ""
+
+msgid "Update time"
+msgstr ""
+
+msgid "DNSFilter Data"
+msgstr ""
+
+msgid "Records"
+msgstr ""
+
+msgid "Refresh..."
+msgstr ""
+
+msgid "No new data!"
+msgstr ""
+
+msgid "Refresh Error!"
+msgstr ""
+
+msgid "Refresh OK!"
+msgstr ""
+
+msgid "Total Records:"
+msgstr ""
+
+msgid "Refresh Data"
+msgstr ""
+
+msgid "Last Update Checked"
+msgstr ""
+
+msgid "Subscribe Rules Data"
+msgstr ""
+
+msgid "AdGuardHome / Host / DNSMASQ / Domain rules auto-convert"
+msgstr ""
+
+msgid "Save rules to flash"
+msgstr ""
+
+msgid "Should be enabled when rules addresses are slow to download"
+msgstr ""
+
+msgid "Delete All Subscribe Rules"
+msgstr ""
+
+msgid "Delete rules files and delete the subscription link<br/>There is no need to click for modify the subscription link,The script will automatically replace the old rule file"
+msgstr ""
+
+msgid "Delete Subscribe Rules On The Flash"
+msgstr ""
+
+msgid "Anti-AD Rules Subscribe"
+msgstr ""
+
+msgid "White Domain List"
+msgstr ""
+
+msgid "Will Never filter these Domain"
+msgstr ""
+
+msgid "Block Domain List"
+msgstr ""
+
+msgid "Will Always block these Domain"
+msgstr ""
+
+msgid "Block IP List"
+msgstr ""
+
+msgid "Will Always block these IP"
+msgstr ""
+
+msgid "Safe Search"
+msgstr ""
+
+msgid "Enforcing SafeSearch for google, bing, duckduckgo, yandex and youtube."
+msgstr ""
+
+msgid "Update Log"
+msgstr ""

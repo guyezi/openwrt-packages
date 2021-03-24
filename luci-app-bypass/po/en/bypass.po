@@ -1,0 +1,710 @@
+msgid "Base Setting"
+msgstr ""
+
+msgid "Bypass Settings"
+msgstr ""
+
+msgid "Support SS/SSR/V2RAY/TROJAN/TROJAN-GO/NAIVEPROXY/SOCKS5/TUN etc."
+msgstr ""
+
+msgid "Bypass RUNNING"
+msgstr ""
+
+msgid "Bypass NOT RUNNING"
+msgstr ""
+
+msgid "Main Server"
+msgstr ""
+
+msgid "Enable"
+msgstr ""
+
+msgid "Disable"
+msgstr ""
+
+msgid "Game Mode UDP Server"
+msgstr ""
+
+msgid "Same as Global Server"
+msgstr ""
+
+msgid "Netflix Server"
+msgstr ""
+
+msgid "External Proxy Mode"
+msgstr ""
+
+msgid "Forward Netflix Proxy through Main Proxy"
+msgstr ""
+
+msgid "Multi Threads Option"
+msgstr ""
+
+msgid "Auto Threads"
+msgstr ""
+
+msgid "1 Thread"
+msgstr ""
+
+msgid "2 Threads"
+msgstr ""
+
+msgid "4 Threads"
+msgstr ""
+
+msgid "8 Threads"
+msgstr ""
+
+msgid "16 Threads"
+msgstr ""
+
+msgid "32 Threads"
+msgstr ""
+
+msgid "64 Threads"
+msgstr ""
+
+msgid "128 Threads"
+msgstr ""
+
+msgid "Running Mode"
+msgstr ""
+
+msgid "GFW List Mode"
+msgstr ""
+
+msgid "Smart Mode"
+msgstr ""
+
+msgid "Global Mode"
+msgstr ""
+
+msgid "Oversea Mode"
+msgstr ""
+
+msgid "Proxy Ports"
+msgstr ""
+
+msgid "Load GFW List"
+msgstr ""
+
+msgid "If the domestic DNS does not hijack foreign domain name to domestic IP, No need to be enabled"
+msgstr ""
+
+msgid "Preload IP"
+msgstr ""
+
+msgid "Preload Google and Telegram IP segments (GFW mode only)"
+msgstr ""
+
+msgid "All Ports"
+msgstr ""
+
+msgid "Only Common Ports"
+msgstr ""
+
+msgid "Foreign Resolve Dns Mode"
+msgstr ""
+
+msgid "Use SmartDNS DoH query"
+msgstr ""
+
+msgid "Use SmartDNS TCP query"
+msgstr ""
+
+msgid "Foreign DoH"
+msgstr ""
+
+msgid "Custom DNS format is https://cloudflare-dns.com/dns-query or https://104.16.249.249/dns-query -http-host cloudflare-dns.com"
+msgstr ""
+
+msgid "Google"
+msgstr ""
+
+msgid "Do not use the same DNS server as the global server"
+msgstr ""
+
+msgid "Foreign DNS"
+msgstr ""
+
+msgid "Custom DNS format is 1.1.1.1:53,1.0.0.1 ,Port optional"
+msgstr ""
+
+msgid "Domestic Resolve Dns Mode"
+msgstr ""
+
+msgid "Use SmartDNS UDP query"
+msgstr ""
+
+msgid "If DoH resolution is not normal,use UDP mode and select ISP DNS"
+msgstr ""
+
+msgid "Domestic DoH"
+msgstr ""
+
+msgid "Custom DNS format is https://dns.alidns.com/dns-query or https://223.5.5.5/dns-query"
+msgstr ""
+
+msgid "Ali"
+msgstr ""
+
+msgid "ISP DNS"
+msgstr ""
+
+msgid "Use ISP DNS to resolve DoH domain"
+msgstr ""
+
+msgid "Domestic DNS"
+msgstr ""
+
+msgid "Custom DNS format is 223.5.5.5:53,223.6.6.6 ,Port optional"
+msgstr ""
+
+msgid "Severs Nodes"
+msgstr ""
+
+msgid "Servers subscription and manage"
+msgstr ""
+
+msgid "Auto Update"
+msgstr ""
+
+msgid "Auto Update Server subscription,GFW list and CHN route"
+msgstr ""
+
+msgid "Update time (every day)"
+msgstr ""
+
+msgid "Subscribe URL"
+msgstr ""
+
+msgid "Subscribe Filter Words"
+msgstr ""
+
+msgid "Filter Words splited by /"
+msgstr ""
+
+msgid "Update Subscribe List"
+msgstr ""
+
+msgid "Update subscribe url list first"
+msgstr ""
+
+msgid "Subscribe Default Auto-Switch"
+msgstr ""
+
+msgid "Subscribe new add server default Auto-Switch on"
+msgstr ""
+
+msgid "Through proxy update"
+msgstr ""
+
+msgid "Through proxy update list,Not Recommended"
+msgstr ""
+
+msgid "Update All Subscribe Severs"
+msgstr ""
+
+msgid "Delete All Subscribe Severs"
+msgstr ""
+
+msgid "Server Count"
+msgstr ""
+
+msgid "Type"
+msgstr ""
+
+msgid "Alias"
+msgstr ""
+
+msgid "None"
+msgstr ""
+
+msgid "Server Port"
+msgstr ""
+
+msgid "Socket Connected"
+msgstr ""
+
+msgid "TCPing Latency"
+msgstr ""
+
+msgid "connecting"
+msgstr ""
+
+msgid "ok"
+msgstr ""
+
+msgid "fail"
+msgstr ""
+
+msgid "Apply"
+msgstr ""
+
+msgid "Auto Switch"
+msgstr ""
+
+msgid "Edit Server"
+msgstr ""
+
+msgid "Paste ssr url here"
+msgstr ""
+
+msgid "Unable to copy SSR to clipboard."
+msgstr ""
+
+msgid "Copy SSR to clipboard successfully."
+msgstr ""
+
+msgid "Server Node Type"
+msgstr ""
+
+msgid "Using incorrect encryption mothod may causes service fail to start"
+msgstr ""
+
+msgid "Alias(optional)"
+msgstr ""
+
+msgid "Network interface to use"
+msgstr ""
+
+msgid "Redirect traffic to this network interface"
+msgstr ""
+
+msgid "Server Address"
+msgstr ""
+
+msgid "Enable Authentication"
+msgstr ""
+
+msgid "Username"
+msgstr ""
+
+msgid "Password"
+msgstr ""
+
+msgid "Encrypt Method"
+msgstr ""
+
+msgid "Plugin"
+msgstr ""
+
+msgid "Plugin Opts"
+msgstr ""
+
+msgid "Protocol"
+msgstr ""
+
+msgid "Protocol param(optional)"
+msgstr ""
+
+msgid "Obfs"
+msgstr ""
+
+msgid "Obfs param(optional)"
+msgstr ""
+
+msgid "VLESS Encryption"
+msgstr ""
+
+msgid "Transport"
+msgstr ""
+
+msgid "allowInsecure"
+msgstr ""
+
+msgid "If true, allowss insecure connection at TLS client, e.g., TLS server uses unverifiable certificates."
+msgstr ""
+
+msgid "Flow"
+msgstr ""
+
+msgid "Concurrency"
+msgstr ""
+
+msgid "Self-signed Certificate"
+msgstr ""
+
+msgid "If you have a self-signed certificate,please check the box"
+msgstr ""
+
+msgid "upload"
+msgstr ""
+
+msgid "Upload"
+msgstr ""
+
+msgid "Create upload file error"
+msgstr ""
+
+msgid "No specify upload file"
+msgstr ""
+
+msgid "Current Certificate Path"
+msgstr ""
+
+msgid "Please confirm the current certificate path"
+msgstr ""
+
+msgid "TCP Fast Open"
+msgstr ""
+
+msgid "Enable Auto Switch"
+msgstr ""
+
+msgid "Local Port"
+msgstr ""
+
+msgid "KcpTun Enable"
+msgstr ""
+
+msgid "KcpTun Port"
+msgstr ""
+
+msgid "KcpTun Password"
+msgstr ""
+
+msgid "KcpTun Param"
+msgstr ""
+
+msgid "Access Control"
+msgstr ""
+
+msgid "IP Access Control"
+msgstr ""
+
+msgid "WAN IP AC"
+msgstr ""
+
+msgid "WAN White List IP"
+msgstr ""
+
+msgid "WAN Force Proxy IP"
+msgstr ""
+
+msgid "LAN IP AC"
+msgstr ""
+
+msgid "LAN Access Control"
+msgstr ""
+
+msgid "Allow listed only"
+msgstr ""
+
+msgid "Allow all except listed"
+msgstr ""
+
+msgid "LAN Host List"
+msgstr ""
+
+msgid "LAN Force Proxy Host List"
+msgstr ""
+
+msgid "Game Mode Host List"
+msgstr ""
+
+msgid "Domain List"
+msgstr ""
+
+msgid "Direct Domain List"
+msgstr ""
+
+msgid "Proxy Domain List"
+msgstr ""
+
+msgid "These had been joined websites will not proxy."
+msgstr ""
+
+msgid "These had been joined websites will use proxy."
+msgstr ""
+
+msgid "Not valid domain name, please re-enter!"
+msgstr ""
+
+msgid "Netflix Domain List"
+msgstr ""
+
+msgid "Oversea Domain List"
+msgstr ""
+
+msgid "Preload domain(GFW Only)"
+msgstr ""
+
+msgid "Advanced Settings"
+msgstr ""
+
+msgid "Server failsafe auto swith settings"
+msgstr ""
+
+msgid "Enable Process Deamon"
+msgstr ""
+
+msgid "Switch check cycly(second)"
+msgstr ""
+
+msgid "Check timout(second)"
+msgstr ""
+
+msgid "Check Try Count"
+msgstr ""
+
+msgid "Global SOCKS5 Proxy Server"
+msgstr ""
+
+msgid "Server"
+msgstr ""
+
+msgid "SSR Server"
+msgstr ""
+
+msgid "Global Setting"
+msgstr ""
+
+msgid "Enable Server"
+msgstr ""
+
+msgid "Server Setting"
+msgstr ""
+
+msgid "Server Type"
+msgstr ""
+
+msgid "Encrypt Method (SS)"
+msgstr ""
+
+msgid "Plugin (SS)"
+msgstr ""
+
+msgid "Warning! Please do not reuse the port!"
+msgstr ""
+
+msgid "Enable Once Auth Mode"
+msgstr ""
+
+msgid "Enable Once Auth,the client IP that passed the authentication will be added to the whitelist address, this IP no longer needs to be verified"
+msgstr ""
+
+msgid "Connection Timeout"
+msgstr ""
+
+msgid "Unknown"
+msgstr ""
+
+msgid "Not exist"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Global Client"
+msgstr ""
+
+msgid "Running"
+msgstr ""
+
+msgid "Not Running"
+msgstr ""
+
+msgid "Game Mode UDP Relay"
+msgstr ""
+
+msgid "Local Servers"
+msgstr ""
+
+msgid "KcpTun Version"
+msgstr ""
+
+msgid "Google Connectivity"
+msgstr ""
+
+msgid "No Check"
+msgstr ""
+
+msgid "Check..."
+msgstr ""
+
+msgid "Connect OK"
+msgstr ""
+
+msgid "Connect Error"
+msgstr ""
+
+msgid "Check Connect"
+msgstr ""
+
+msgid "Baidu Connectivity"
+msgstr ""
+
+msgid "GFW List Data"
+msgstr ""
+
+msgid "Refresh Data"
+msgstr ""
+
+msgid "Records"
+msgstr ""
+
+msgid "Refresh..."
+msgstr ""
+
+msgid "Refresh OK!"
+msgstr ""
+
+msgid "Refresh Error!"
+msgstr ""
+
+msgid "No new data!"
+msgstr ""
+
+msgid "Total Records:"
+msgstr ""
+
+msgid "China IPv4 Data"
+msgstr ""
+
+msgid "China IPv6 Data"
+msgstr ""
+
+msgid "Check Server Port"
+msgstr ""
+
+msgid "Check Server"
+msgstr ""
+
+msgid "Log"
+msgstr ""
+
+msgid "Finger Print"
+msgstr ""
+
+msgid "Shadowsocks2"
+msgstr ""
+
+msgid "From Share URL"
+msgstr ""
+
+msgid "Build Share URL"
+msgstr ""
+
+msgid "Import Finished"
+msgstr ""
+
+msgid "Not a supported scheme:"
+msgstr ""
+
+msgid "Invalid Share URL Format"
+msgstr ""
+
+msgid "User cancelled"
+msgstr ""
+
+msgid "Paste Share URL Here"
+msgstr ""
+
+msgid "Unable share to clipboard"
+msgstr ""
+
+msgid "Share to clipboard successfully"
+msgstr ""
+
+msgid "Faltal on get option:"
+msgstr ""
+
+msgid "Faltal on set option:"
+msgstr ""
+
+msgid "Check update"
+msgstr ""
+
+msgid "Update..."
+msgstr ""
+
+msgid "It is the latest version"
+msgstr ""
+
+msgid "Update successful"
+msgstr ""
+
+msgid "Click to update"
+msgstr ""
+
+msgid "Updating..."
+msgstr ""
+
+msgid "Unexpected error"
+msgstr ""
+
+msgid "Updating, are you sure to close?"
+msgstr ""
+
+msgid "Downloading..."
+msgstr ""
+
+msgid "Unpacking..."
+msgstr ""
+
+msgid "Moving..."
+msgstr ""
+
+msgid "App Update"
+msgstr ""
+
+msgid "Please confirm that your firmware supports FPU."
+msgstr ""
+
+msgid "Make sure there is enough space to install %s"
+msgstr ""
+
+msgid "RUNNING"
+msgstr ""
+
+msgid "NOT RUNNING"
+msgstr ""
+
+msgid "Working..."
+msgstr ""
+
+msgid "Problem detected!"
+msgstr ""
+
+msgid "Very Fast"
+msgstr ""
+
+msgid "Fast"
+msgstr ""
+
+msgid "General"
+msgstr ""
+
+msgid "Slow"
+msgstr ""
+
+msgid "Very Slow"
+msgstr ""
+
+msgid "Touch Check"
+msgstr ""
+
+msgid "Socks5 Server"
+msgstr ""
+
+msgid "Running Status"
+msgstr ""
+
+msgid "Baidu Connection"
+msgstr ""
+
+msgid "Google Connection"
+msgstr ""
+
+msgid "Node Check"
+msgstr ""
+
+msgid "Check..."
+msgstr ""
+
+msgid "Clear"
+msgstr ""
+
+msgid "To Top"
+msgstr ""
