@@ -1,0 +1,44 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "AliDDNS"
+msgstr ""
+
+msgid "enable"
+msgstr ""
+
+msgid "Clean Before Update"
+msgstr ""
+
+msgid "Base"
+msgstr ""
+
+msgid "WAN-IP Source"
+msgstr ""
+
+msgid "Select WAN-IP Source"
+msgstr ""
+
+msgid "Select the WAN-IP Source for AliDDNS, like wan/internet"
+msgstr ""
+
+msgid "Main Domain"
+msgstr ""
+
+msgid "Sub Domain"
+msgstr ""
+
+msgid "For example: test.github.com -> github.com"
+msgstr ""
+
+msgid "For example: test.github.com -> test"
+msgstr ""
+
+msgid "Inspection Time"
+msgstr ""
+
+msgid "Unit: Minute, Range: 1-59"
+msgstr ""
+
+msgid "Update Log"
+msgstr ""
