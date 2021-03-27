@@ -18,7 +18,7 @@ PKG_LICENSE_FILES:=LICENSE
 
 define Package/defaultsettings
   SECTION:=luci
-  CATEGORY:=luci
+  CATEGORY:=LuCI
   TITLE:=Openwrt support for Default Settings
   PKGARCH:=all
   DEPENDS:=+luci-base +luci +luci-compat +@LUCI_LANG_zh-cn +nano
