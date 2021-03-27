@@ -20,13 +20,13 @@ start() {
 	ENABLED=$(config_t_get global enable 0)
 	[ "$ENABLED" = "0" ] && return
 	ADDRESS=$(config_t_get global address 0.0.0.0)
-	PORT=$(config_t_get global port 8088)
-	DATABASE=$(config_t_get global database /etc/gitea.db)
+	PORT=$(config_t_get global port 3000)
+	DATABASE=$(config_t_get global database /root/gitea/gitea.db)
 	USERNAME=$(config_t_get global username admin)
 	PASSWORD=$(config_t_get global password admin)
 	SSL_CERT=$(config_t_get global ssl_cert)
 	SSL_KEY=$(config_t_get global ssl_key)
-	ROOT_PATH=$(config_t_get global root_path /root)
+	ROOT_PATH=$(config_t_get global root_path /root/gitea)
 	executable_directory=$(config_t_get global executable_directory /tmp)
 	[ ! -f "$executable_directory/gitea" ] && echolog "$executable_directory/gitea not exists, please download first" && exit
 	
