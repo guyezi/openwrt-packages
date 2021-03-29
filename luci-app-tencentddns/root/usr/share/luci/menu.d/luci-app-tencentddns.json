@@ -1,0 +1,17 @@
+{
+	"admin/ddnss/tencentddns": {
+		"title": "tencentddns",
+		"order": 10,
+		"action": {
+			"type": "cbi",
+			"path": "tencentddns"
+		},
+		"depends": {
+			"acl": [ "luci-app-tencentddns" ],
+			"fs": {
+				"/usr/sbin/tencentddns": "executable",
+				"/etc/init.d/tencentddns": "executable"
+			}
+		}
+	}
+}

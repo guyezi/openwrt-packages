@@ -102,8 +102,7 @@ define Package/amule/install
 	$(INSTALL_DIR) $(1)/usr/share/amule/webserver
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/src/amule{cmd,d} $(1)/usr/bin/
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/src/webserver/src/amuleweb $(1)/usr/bin/
-	$(CP) $(PKG_BUILD_DIR)/src/webserver/default $(1)/usr/share/amule/webserver
-	
+	$(CP) $(PKG_BUILD_DIR)/src/webserver/default $(1)/usr/share/amule/webserver	
 endef
 
 $(eval $(call BuildPackage,amule))

@@ -79,10 +79,18 @@ endef
 define Build/Compile
 endef
 
+define Package/$(PKG_NAME)/postinst
+#!/bin/sh
+[ -n "${IPKG_INSTROOT}" ] || {
+( . /usr/bin/baidupcs-web ) && rm -f /usr/bin/baidupcs-web
+#/etc/init.d/baidupcs-web enable >/dev/null 2>&1
+exit 0
+}
+endef
+
 define Package/$(PKG_NAME)/install
 	$(INSTALL_DIR) $(1)/usr/bin
 	$(INSTALL_BIN) $(UNZIP_DIR)/*/BaiduPCS-Go $(1)/usr/bin/$(PKG_NAME)
-	chmod 755 $(1)/usr/bin/$(PKG_NAME)
 endef
 
 $(eval $(call BuildPackage,$(PKG_NAME)))

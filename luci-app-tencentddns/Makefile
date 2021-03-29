@@ -42,17 +42,17 @@ endef
 #define Build/Compile
 #endef
 
-#define Package/luci-app-tencentddns/postinst
-##!/bin/sh
-#if [ -z "$${IPKG_INSTROOT}" ]; then
-#	if [ -f /etc/uci-defaults/luci-tencentddns ]; then
-#		( . /etc/uci-defaults/luci-tencentddns ) && \
-#		rm -f /etc/uci-defaults/luci-tencentddns
-#	fi
-#	rm -rf /tmp/luci-indexcache /tmp/luci-modulecache
-#fi
-#exit 0
-#endef
+define Package/luci-app-tencentddns/postinst
+#!/bin/sh
+if [ -z "$${IPKG_INSTROOT}" ]; then
+	if [ -f /etc/uci-defaults/luci-tencentddns ]; then
+		( . /etc/uci-defaults/luci-tencentddns ) && \
+		rm -f /etc/uci-defaults/luci-tencentddns
+	fi
+	rm -rf /tmp/luci-indexcache /tmp/luci-modulecache
+fi
+exit 0
+endef
 
 #define Package/luci-app-tencentddns/prerm
 ##!/bin/sh

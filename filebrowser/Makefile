@@ -89,11 +89,20 @@ ifeq ($(CONFIG_FILEBROWSER_COMPRESS_UPX),y)
 endif
 endef
 
+define Package/$(PKG_NAME)/postinst
+#!/bin/sh
+[ -n "${IPKG_INSTROOT}" ] || {
+  ( . /etc/uci-defaults/filebrowser ) && rm -f /etc/uci-defaults/filebrowser
+  /etc/init.d/filebrowser enable >/dev/null 2>&1
+  exit 0
+}
+endef
+
 define Package/filebrowser/install
 	$(call GoPackage/Package/Install/Bin,$(PKG_INSTALL_DIR))
 	$(INSTALL_DIR) $(1)/etc/config/ $(1)/etc/init.d/ $(1)/usr/bin/
-	$(INSTALL_CONF) $(CURDIR)/files/filebrowser.config $(1)/etc/config/filebrowser
-	$(INSTALL_BIN) $(CURDIR)/files/filebrowser.init $(1)/etc/init.d/filebrowser
+	$(INSTALL_CONF) $(CURDIR)/root/etc/config/filebrowser $(1)/etc/config/filebrowser
+	$(INSTALL_BIN) $(CURDIR)/root/etc/init.d/filebrowser $(1)/etc/init.d/filebrowser
 	$(INSTALL_BIN) $(GO_PKG_BUILD_BIN_DIR)/filebrowser $(1)/usr/bin/filebrowser
 endef
 
