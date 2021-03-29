@@ -1,3 +1,16 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: 孤爺仔 <admin@guyezi.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh\n"
+"X-Generator: Poedit 2.4.2\n"
+
 msgid "Base Setting"
 msgstr "基本设置"
 
@@ -5,7 +18,7 @@ msgid "Bypass Settings"
 msgstr "Bypass 设置"
 
 msgid "Support SS/SSR/V2RAY/TROJAN/TROJAN-GO/NAIVEPROXY/SOCKS5/TUN etc."
-msgstr "支持 SS/SSR/V2ray/Trojan/Trojan-Go/NavieProxy/Socks5/TUN 等协议"
+msgstr "支持 SS/SSR/V2ray/Trojan/Trojan-Go/NavieProxy/Socks5/TUN 等协议."
 
 msgid "Bypass RUNNING"
 msgstr "Bypass 客户端运行中"
@@ -88,7 +101,9 @@ msgstr "需要代理的端口"
 msgid "Load GFW List"
 msgstr "加载GFW列表"
 
-msgid "If the domestic DNS does not hijack foreign domain name to domestic IP, No need to be enabled"
+msgid ""
+"If the domestic DNS does not hijack foreign domain name to domestic IP, No "
+"need to be enabled"
 msgstr "如果国内DNS未劫持国外域名返回国内的IP，不需要启用"
 
 msgid "Preload IP"
@@ -115,8 +130,12 @@ msgstr "使用SmartDNS TCP查询"
 msgid "Foreign DoH"
 msgstr "国外DoH"
 
-msgid "Custom DNS format is https://cloudflare-dns.com/dns-query or https://104.16.249.249/dns-query -http-host cloudflare-dns.com"
-msgstr "自定义DNS格式为 https://cloudflare-dns.com/dns-query 或 https://104.16.249.249/dns-query -http-host cloudflare-dns.com"
+msgid ""
+"Custom DNS format is https://cloudflare-dns.com/dns-query or "
+"https://104.16.249.249/dns-query -http-host cloudflare-dns.com"
+msgstr ""
+"自定义DNS格式为 https://cloudflare-dns.com/dns-query 或 "
+"https://104.16.249.249/dns-query -http-host cloudflare-dns.com"
 
 msgid "Google"
 msgstr "谷歌"
@@ -142,8 +161,12 @@ msgstr "如果DoH解析不正常则使用UDP模式并选择ISP的DNS"
 msgid "Domestic DoH"
 msgstr "国内DoH"
 
-msgid "Custom DNS format is https://dns.alidns.com/dns-query or https://223.5.5.5/dns-query"
-msgstr "自定义DNS格式为 https://dns.alidns.com/dns-query 或 https://223.5.5.5/dns-query"
+msgid ""
+"Custom DNS format is https://dns.alidns.com/dns-query or https://223.5.5.5/"
+"dns-query"
+msgstr ""
+"自定义DNS格式为 https://dns.alidns.com/dns-query 或 https://223.5.5.5/dns-"
+"query"
 
 msgid "Ali"
 msgstr "阿里"
@@ -182,7 +205,7 @@ msgid "Subscribe Filter Words"
 msgstr "订阅节点关键字过滤"
 
 msgid "Filter Words splited by /"
-msgstr "命中关键字的节点将被丢弃或保留。多个关键字用 / 分隔"
+msgstr "命中关键字的节点将被丢弃或保留.多个关键字用分隔符 /"
 
 msgid "Filter Words Mode"
 msgstr "节点关键字过滤模式"
@@ -260,10 +283,10 @@ msgid "Paste ssr url here"
 msgstr "在此处粘贴ssr://网址"
 
 msgid "Unable to copy SSR to clipboard."
-msgstr "无法复制SSR网址到剪贴板。"
+msgstr "无法复制SSR网址到剪贴板."
 
 msgid "Copy SSR to clipboard successfully."
-msgstr "成功复制SSR网址到剪贴板。"
+msgstr "成功复制SSR网址到剪贴板."
 
 msgid "Server Node Type"
 msgstr "服务器节点类型"
@@ -322,8 +345,11 @@ msgstr "传输协议"
 msgid "allowInsecure"
 msgstr "允许不安全连接"
 
-msgid "If true, allowss insecure connection at TLS client, e.g., TLS server uses unverifiable certificates."
-msgstr "是否允许不安全连接。当选择时，将不会检查远端主机所提供的 TLS 证书的有效性。"
+msgid ""
+"If true, allowss insecure connection at TLS client, e.g., TLS server uses "
+"unverifiable certificates."
+msgstr ""
+"是否允许不安全连接。当选择时，将不会检查远端主机所提供的 TLS 证书的有效性."
 
 msgid "Flow"
 msgstr "流控 (Flow)"
@@ -422,13 +448,13 @@ msgid "Proxy Domain List"
 msgstr "强制走代理的域名"
 
 msgid "These had been joined websites will not proxy."
-msgstr "加入的域名将不走代理。"
+msgstr "加入的域名将不走代理."
 
 msgid "These had been joined websites will use proxy."
-msgstr "加入的域名将走代理。"
+msgstr "加入的域名将走代理."
 
 msgid "Not valid domain name, please re-enter!"
-msgstr "不是有效域名，请重新输入！"
+msgstr "不是有效域名，请重新输入!"
 
 msgid "Netflix Domain List"
 msgstr "Netflix分流域名"
@@ -485,13 +511,16 @@ msgid "Plugin (SS)"
 msgstr "插件 (SS)"
 
 msgid "Warning! Please do not reuse the port!"
-msgstr "警告！请不要重复使用端口！"
+msgstr "警告！请不要重复使用端口!"
 
 msgid "Enable Once Auth Mode"
 msgstr "启用一次性认证"
 
-msgid "Enable Once Auth,the client IP that passed the authentication will be added to the whitelist address, this IP no longer needs to be verified"
-msgstr "启用一次性认证后会将通过认证的客户端IP地址加入白名单，之后的连接不再进行认证"
+msgid ""
+"Enable Once Auth,the client IP that passed the authentication will be added "
+"to the whitelist address, this IP no longer needs to be verified"
+msgstr ""
+"启用一次性认证后会将通过认证的客户端IP地址加入白名单，之后的连接不再进行认证"
 
 msgid "Connection Timeout"
 msgstr "连接超时"
@@ -530,7 +559,7 @@ msgid "No Check"
 msgstr "未检查"
 
 msgid "Check..."
-msgstr "正在检查.."
+msgstr "正在检查..."
 
 msgid "Connect OK"
 msgstr "连接正常"
@@ -554,19 +583,19 @@ msgid "Records"
 msgstr "条记录"
 
 msgid "Refresh..."
-msgstr "正在更新，请稍候.."
+msgstr "正在更新，请稍候..."
 
 msgid "Refresh OK!"
-msgstr "更新成功！"
+msgstr "更新成功!"
 
 msgid "Refresh Error!"
-msgstr "更新失败！"
+msgstr "更新失败!"
 
 msgid "No new data!"
-msgstr "你已经是最新数据，无需更新！"
+msgstr "你已经是最新数据，无需更新!"
 
 msgid "Total Records:"
-msgstr "新的总纪录数："
+msgstr "新的总纪录数:"
 
 msgid "China IPv4 Data"
 msgstr "【国内IPv4段】数据库"
@@ -596,10 +625,10 @@ msgid "Build Share URL"
 msgstr "导出配置信息"
 
 msgid "Import Finished"
-msgstr "导入完成："
+msgstr "导入完成"
 
 msgid "Not a supported scheme:"
-msgstr "不支持此格式："
+msgstr "不支持此格式:"
 
 msgid "Invalid Share URL Format"
 msgstr "无效的配置链接"
@@ -617,16 +646,16 @@ msgid "Share to clipboard successfully"
 msgstr "成功复制配置链接到剪贴板"
 
 msgid "Faltal on get option:"
-msgstr "获取选项错误："
+msgstr "获取选项错误:"
 
 msgid "Faltal on set option:"
-msgstr "获取选项错误："
+msgstr "获取选项错误:"
 
 msgid "Check update"
 msgstr "检查更新"
 
 msgid "Update..."
-msgstr "更新中"
+msgstr "更新中..."
 
 msgid "It is the latest version"
 msgstr "已是最新版本"
@@ -638,28 +667,28 @@ msgid "Click to update"
 msgstr "点击更新"
 
 msgid "Updating..."
-msgstr "更新中"
+msgstr "更新中..."
 
 msgid "Unexpected error"
 msgstr "意外错误"
 
 msgid "Updating, are you sure to close?"
-msgstr "正在更新，你确认要关闭吗？"
+msgstr "正在更新，你确认要关闭吗?"
 
 msgid "Downloading..."
-msgstr "下载中"
+msgstr "下载中..."
 
 msgid "Unpacking..."
-msgstr "解压中"
+msgstr "解压中..."
 
 msgid "Moving..."
-msgstr "移动中"
+msgstr "移动中..."
 
 msgid "App Update"
 msgstr "组件更新"
 
 msgid "Please confirm that your firmware supports FPU."
-msgstr "请确认你的固件支持FPU。"
+msgstr "请确认你的固件支持FPU."
 
 msgid "Make sure there is enough space to install %s"
 msgstr "确保有足够的空间安装 %s"
@@ -671,10 +700,10 @@ msgid "NOT RUNNING"
 msgstr "未运行"
 
 msgid "Working..."
-msgstr "连接正常"
+msgstr "连接正常..."
 
 msgid "Problem detected!"
-msgstr "连接失败"
+msgstr "连接失败!"
 
 msgid "Very Fast"
 msgstr "非常快"
@@ -708,9 +737,6 @@ msgstr "谷歌连接"
 
 msgid "Node Check"
 msgstr "节点检测"
-
-msgid "Check..."
-msgstr "检测中..."
 
 msgid "Clear"
 msgstr "清除"

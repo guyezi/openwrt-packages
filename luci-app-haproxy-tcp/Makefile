@@ -13,8 +13,6 @@ PKG_VERSION=1.4
 PKG_RELEASE:=2
 PKG_MAINTAINER:=Alex Zhuo <1886090@gmail.com>
 
-include $(TOPDIR)/feeds/luci/luci.mk
-
 define Package/$(PKG_NAME)/postinst
 #!/bin/sh
 rm -rf /tmp/luci*
@@ -23,5 +21,7 @@ echo stopping haproxy
 /etc/init.d/haproxy disable
 echo haproxy disabled
 endef
+
+include $(TOPDIR)/feeds/luci/luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature

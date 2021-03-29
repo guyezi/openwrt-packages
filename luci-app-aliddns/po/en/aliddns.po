@@ -1,0 +1,55 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: luci-app-aliddns\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: 孤爺仔 <admin@guyezi.com>\n"
+"Language-Team: admin@guyezi.com\n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+msgid "AliDDNS"
+msgstr "AliDDNS"
+
+msgid "enable"
+msgstr "enable"
+
+msgid "Clean Before Update"
+msgstr "Clean Before Update"
+
+msgid "Base"
+msgstr "Base"
+
+msgid "WAN-IP Source"
+msgstr "WAN-IP Source"
+
+msgid "Select WAN-IP Source"
+msgstr "Select WAN-IP Source"
+
+msgid "Select the WAN-IP Source for AliDDNS, like wan/internet"
+msgstr "Select the WAN-IP Source for AliDDNS, like wan/internet"
+
+msgid "Main Domain"
+msgstr "Main Domain"
+
+msgid "Sub Domain"
+msgstr "Sub Domain"
+
+msgid "For example: test.github.com -> github.com"
+msgstr "For example: test.github.com -> github.com"
+
+msgid "For example: test.github.com -> test"
+msgstr "For example: test.github.com -> test"
+
+msgid "Inspection Time"
+msgstr "Inspection Time"
+
+msgid "Unit: Minute, Range: 1-59"
+msgstr "Unit: Minute, Range: 1-59"
+
+msgid "Update Log"
+msgstr "Update Log"

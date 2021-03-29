@@ -94,48 +94,48 @@ define Package/$(PKG_NAME)
 	+PACKAGE_$(PKG_NAME)_INCLUDE_Socks_Server:microsocks
 endef
 
-define Build/Prepare
+#define Build/Prepare
 	$(foreach po,$(wildcard ${CURDIR}/po/*/bypass.po), \
 		$(PO2LMO) $(po) $(PKG_BUILD_DIR)/$(patsubst %.po,%.lmo,$(notdir $(po)));)
-endef
+#endef
 
-define Build/Compile
-endef
+#define Build/Compile
+#endef
 
 define Package/$(PKG_NAME)/conffiles
 /etc/config/bypass
 /etc/bypass/
 endef
 
-define Package/$(PKG_NAME)/install
-	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/controller
-	$(INSTALL_DATA) ./luasrc/controller/* $(1)/usr/lib/lua/luci/controller/
-	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/model/cbi/bypass
-	$(INSTALL_DATA) ./luasrc/model/cbi/bypass/* $(1)/usr/lib/lua/luci/model/cbi/bypass/
-	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/view/bypass
-	$(INSTALL_DATA) ./luasrc/view/bypass/* $(1)/usr/lib/lua/luci/view/bypass/
-	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/i18n
-	#$(INSTALL_DATA) $(PKG_BUILD_DIR)/po/*/*.lmo $(1)/usr/lib/lua/luci/i18n/
-	$(INSTALL_DIR) $(1)/etc/bypass
-	$(INSTALL_DATA) ./root/etc/bypass/* $(1)/etc/bypass/
-	$(INSTALL_DIR) $(1)/etc/config
-	$(INSTALL_DATA) ./root/etc/config/* $(1)/etc/config/
-	$(INSTALL_DIR) $(1)/etc/hotplug.d/iface
-	$(INSTALL_BIN) ./root/etc/hotplug.d/iface/* $(1)/etc/hotplug.d/iface/
-	$(INSTALL_DIR) $(1)/etc/init.d
-	$(INSTALL_BIN) ./root/etc/init.d/* $(1)/etc/init.d/
-	$(INSTALL_DIR) $(1)/etc/uci-defaults
-	$(INSTALL_BIN) ./root/etc/uci-defaults/* $(1)/etc/uci-defaults/
-	$(INSTALL_DIR) $(1)/usr/share/bypass
-	$(INSTALL_BIN) ./root/usr/share/bypass/* $(1)/usr/share/bypass/
-	$(INSTALL_DATA) ./root/GeoLite2-Country.mmdb $(1)/usr/share/bypass/
-	$(INSTALL_DIR) $(1)/usr/share/rpcd/acl.d
-	$(INSTALL_DATA) ./root/usr/share/rpcd/acl.d/* $(1)/usr/share/rpcd/acl.d/
-	$(INSTALL_DIR) $(1)/www/luci-static/bypass/flags
-	$(INSTALL_DATA) ./root/www/luci-static/bypass/flags/* $(1)/www/luci-static/bypass/flags/
-	$(INSTALL_DIR) $(1)/www/luci-static/bypass/img
-	$(INSTALL_DATA) ./root/www/luci-static/bypass/img/* $(1)/www/luci-static/bypass/img/
-endef
+#define Package/$(PKG_NAME)/install
+#	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/controller
+#	$(INSTALL_DATA) ./luasrc/controller/* $(1)/usr/lib/lua/luci/controller/
+#	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/model/cbi/bypass
+#	$(INSTALL_DATA) ./luasrc/model/cbi/bypass/* $(1)/usr/lib/lua/luci/model/cbi/bypass/
+#	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/view/bypass
+#	$(INSTALL_DATA) ./luasrc/view/bypass/* $(1)/usr/lib/lua/luci/view/bypass/
+#	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/i18n
+#	#$(INSTALL_DATA) $(PKG_BUILD_DIR)/po/*/*.lmo $(1)/usr/lib/lua/luci/i18n/
+#	$(INSTALL_DIR) $(1)/etc/bypass
+#	$(INSTALL_DATA) ./root/etc/bypass/* $(1)/etc/bypass/
+#	$(INSTALL_DIR) $(1)/etc/config
+#	$(INSTALL_DATA) ./root/etc/config/* $(1)/etc/config/
+#	$(INSTALL_DIR) $(1)/etc/hotplug.d/iface
+#	$(INSTALL_BIN) ./root/etc/hotplug.d/iface/* $(1)/etc/hotplug.d/iface/
+#	$(INSTALL_DIR) $(1)/etc/init.d
+#	$(INSTALL_BIN) ./root/etc/init.d/* $(1)/etc/init.d/
+#	$(INSTALL_DIR) $(1)/etc/uci-defaults
+#	$(INSTALL_BIN) ./root/etc/uci-defaults/* $(1)/etc/uci-defaults/
+#	$(INSTALL_DIR) $(1)/usr/share/bypass
+#	$(INSTALL_BIN) ./root/usr/share/bypass/* $(1)/usr/share/bypass/
+#	$(INSTALL_DATA) ./root/GeoLite2-Country.mmdb $(1)/usr/share/bypass/
+#	$(INSTALL_DIR) $(1)/usr/share/rpcd/acl.d
+#	$(INSTALL_DATA) ./root/usr/share/rpcd/acl.d/* $(1)/usr/share/rpcd/acl.d/
+#	$(INSTALL_DIR) $(1)/www/luci-static/bypass/flags
+#	$(INSTALL_DATA) ./root/www/luci-static/bypass/flags/* $(1)/www/luci-static/bypass/flags/
+#	$(INSTALL_DIR) $(1)/www/luci-static/bypass/img
+#	$(INSTALL_DATA) ./root/www/luci-static/bypass/img/* $(1)/www/luci-static/bypass/img/
+#endef
 
 define Package/$(PKG_NAME)/prerm
 #!/bin/sh

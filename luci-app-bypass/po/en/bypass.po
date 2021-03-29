@@ -1,710 +1,741 @@
-msgid "Base Setting"
+msgid ""
 msgstr ""
+"Project-Id-Version: luci-app-bypass\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: 孤爺仔 <admin@guyezi.com>\n"
+"Language-Team: guyezi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+msgid "Base Setting"
+msgstr "Base Setting"
 
 msgid "Bypass Settings"
-msgstr ""
+msgstr "Bypass Settings"
 
 msgid "Support SS/SSR/V2RAY/TROJAN/TROJAN-GO/NAIVEPROXY/SOCKS5/TUN etc."
-msgstr ""
+msgstr "Support SS/SSR/V2RAY/TROJAN/TROJAN-GO/NAIVEPROXY/SOCKS5/TUN etc."
 
 msgid "Bypass RUNNING"
-msgstr ""
+msgstr "Bypass RUNNING"
 
 msgid "Bypass NOT RUNNING"
-msgstr ""
+msgstr "Bypass NOT RUNNING"
 
 msgid "Main Server"
-msgstr ""
+msgstr "Main Server"
 
 msgid "Enable"
-msgstr ""
+msgstr "Enable"
 
 msgid "Disable"
-msgstr ""
+msgstr "Disable"
 
 msgid "Game Mode UDP Server"
-msgstr ""
+msgstr "Game Mode UDP Server"
 
 msgid "Same as Global Server"
-msgstr ""
+msgstr "Same as Global Server"
 
 msgid "Netflix Server"
-msgstr ""
+msgstr "Netflix Server"
 
 msgid "External Proxy Mode"
-msgstr ""
+msgstr "External Proxy Mode"
 
 msgid "Forward Netflix Proxy through Main Proxy"
-msgstr ""
+msgstr "Forward Netflix Proxy through Main Proxy"
 
 msgid "Multi Threads Option"
-msgstr ""
+msgstr "Multi Threads Option"
 
 msgid "Auto Threads"
-msgstr ""
+msgstr "Auto Threads"
 
 msgid "1 Thread"
-msgstr ""
+msgstr "1 Thread"
 
 msgid "2 Threads"
-msgstr ""
+msgstr "2 Threads"
 
 msgid "4 Threads"
-msgstr ""
+msgstr "4 Threads"
 
 msgid "8 Threads"
-msgstr ""
+msgstr "8 Threads"
 
 msgid "16 Threads"
-msgstr ""
+msgstr "16 Threads"
 
 msgid "32 Threads"
-msgstr ""
+msgstr "32 Threads"
 
 msgid "64 Threads"
-msgstr ""
+msgstr "64 Threads"
 
 msgid "128 Threads"
-msgstr ""
+msgstr "128 Threads"
 
 msgid "Running Mode"
-msgstr ""
+msgstr "Running Mode"
 
 msgid "GFW List Mode"
-msgstr ""
+msgstr "GFW List Mode"
 
 msgid "Smart Mode"
-msgstr ""
+msgstr "Smart Mode"
 
 msgid "Global Mode"
-msgstr ""
+msgstr "Global Mode"
 
 msgid "Oversea Mode"
-msgstr ""
+msgstr "Oversea Mode"
 
 msgid "Proxy Ports"
-msgstr ""
+msgstr "Proxy Ports"
 
 msgid "Load GFW List"
-msgstr ""
+msgstr "Load GFW List"
 
-msgid "If the domestic DNS does not hijack foreign domain name to domestic IP, No need to be enabled"
+msgid ""
+"If the domestic DNS does not hijack foreign domain name to domestic IP, No "
+"need to be enabled"
 msgstr ""
+"If the domestic DNS does not hijack foreign domain name to domestic IP, No "
+"need to be enabled"
 
 msgid "Preload IP"
-msgstr ""
+msgstr "Preload IP"
 
 msgid "Preload Google and Telegram IP segments (GFW mode only)"
-msgstr ""
+msgstr "Preload Google and Telegram IP segments (GFW mode only)"
 
 msgid "All Ports"
-msgstr ""
+msgstr "All Ports"
 
 msgid "Only Common Ports"
-msgstr ""
+msgstr "Only Common Ports"
 
 msgid "Foreign Resolve Dns Mode"
-msgstr ""
+msgstr "Foreign Resolve Dns Mode"
 
 msgid "Use SmartDNS DoH query"
-msgstr ""
+msgstr "Use SmartDNS DoH query"
 
 msgid "Use SmartDNS TCP query"
-msgstr ""
+msgstr "Use SmartDNS TCP query"
 
 msgid "Foreign DoH"
-msgstr ""
+msgstr "Foreign DoH"
 
-msgid "Custom DNS format is https://cloudflare-dns.com/dns-query or https://104.16.249.249/dns-query -http-host cloudflare-dns.com"
+msgid ""
+"Custom DNS format is https://cloudflare-dns.com/dns-query or "
+"https://104.16.249.249/dns-query -http-host cloudflare-dns.com"
 msgstr ""
+"Custom DNS format is https://cloudflare-dns.com/dns-query or "
+"https://104.16.249.249/dns-query -http-host cloudflare-dns.com"
 
 msgid "Google"
-msgstr ""
+msgstr "Google"
 
 msgid "Do not use the same DNS server as the global server"
-msgstr ""
+msgstr "Do not use the same DNS server as the global server"
 
 msgid "Foreign DNS"
-msgstr ""
+msgstr "Foreign DNS"
 
 msgid "Custom DNS format is 1.1.1.1:53,1.0.0.1 ,Port optional"
-msgstr ""
+msgstr "Custom DNS format is 1.1.1.1:53,1.0.0.1 ,Port optional"
 
 msgid "Domestic Resolve Dns Mode"
-msgstr ""
+msgstr "Domestic Resolve Dns Mode"
 
 msgid "Use SmartDNS UDP query"
-msgstr ""
+msgstr "Use SmartDNS UDP query"
 
 msgid "If DoH resolution is not normal,use UDP mode and select ISP DNS"
-msgstr ""
+msgstr "If DoH resolution is not normal,use UDP mode and select ISP DNS"
 
 msgid "Domestic DoH"
-msgstr ""
+msgstr "Domestic DoH"
 
-msgid "Custom DNS format is https://dns.alidns.com/dns-query or https://223.5.5.5/dns-query"
+msgid ""
+"Custom DNS format is https://dns.alidns.com/dns-query or https://223.5.5.5/"
+"dns-query"
 msgstr ""
+"Custom DNS format is https://dns.alidns.com/dns-query or https://223.5.5.5/"
+"dns-query"
 
 msgid "Ali"
-msgstr ""
+msgstr "Ali"
 
 msgid "ISP DNS"
-msgstr ""
+msgstr "ISP DNS"
 
 msgid "Use ISP DNS to resolve DoH domain"
-msgstr ""
+msgstr "Use ISP DNS to resolve DoH domain"
 
 msgid "Domestic DNS"
-msgstr ""
+msgstr "Domestic DNS"
 
 msgid "Custom DNS format is 223.5.5.5:53,223.6.6.6 ,Port optional"
-msgstr ""
+msgstr "Custom DNS format is 223.5.5.5:53,223.6.6.6 ,Port optional"
 
 msgid "Severs Nodes"
-msgstr ""
+msgstr "Severs Nodes"
 
 msgid "Servers subscription and manage"
-msgstr ""
+msgstr "Servers subscription and manage"
 
 msgid "Auto Update"
-msgstr ""
+msgstr "Auto Update"
 
 msgid "Auto Update Server subscription,GFW list and CHN route"
-msgstr ""
+msgstr "Auto Update Server subscription,GFW list and CHN route"
 
 msgid "Update time (every day)"
-msgstr ""
+msgstr "Update time (every day)"
 
 msgid "Subscribe URL"
-msgstr ""
+msgstr "Subscribe URL"
 
 msgid "Subscribe Filter Words"
-msgstr ""
+msgstr "Subscribe Filter Words"
 
 msgid "Filter Words splited by /"
-msgstr ""
+msgstr "Filter Words splited by /"
 
 msgid "Update Subscribe List"
-msgstr ""
+msgstr "Update Subscribe List"
 
 msgid "Update subscribe url list first"
-msgstr ""
+msgstr "Update subscribe url list first"
 
 msgid "Subscribe Default Auto-Switch"
-msgstr ""
+msgstr "Subscribe Default Auto-Switch"
 
 msgid "Subscribe new add server default Auto-Switch on"
-msgstr ""
+msgstr "Subscribe new add server default Auto-Switch on"
 
 msgid "Through proxy update"
-msgstr ""
+msgstr "Through proxy update"
 
 msgid "Through proxy update list,Not Recommended"
-msgstr ""
+msgstr "Through proxy update list,Not Recommended"
 
 msgid "Update All Subscribe Severs"
-msgstr ""
+msgstr "Update All Subscribe Severs"
 
 msgid "Delete All Subscribe Severs"
-msgstr ""
+msgstr "Delete All Subscribe Severs"
 
 msgid "Server Count"
-msgstr ""
+msgstr "Server Count"
 
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 msgid "Alias"
-msgstr ""
+msgstr "Alias"
 
 msgid "None"
-msgstr ""
+msgstr "None"
 
 msgid "Server Port"
-msgstr ""
+msgstr "Server Port"
 
 msgid "Socket Connected"
-msgstr ""
+msgstr "Socket Connected"
 
 msgid "TCPing Latency"
-msgstr ""
+msgstr "TCPing Latency"
 
 msgid "connecting"
-msgstr ""
+msgstr "connecting"
 
 msgid "ok"
-msgstr ""
+msgstr "ok"
 
 msgid "fail"
-msgstr ""
+msgstr "fail"
 
 msgid "Apply"
-msgstr ""
+msgstr "Apply"
 
 msgid "Auto Switch"
-msgstr ""
+msgstr "Auto Switch"
 
 msgid "Edit Server"
-msgstr ""
+msgstr "Edit Server"
 
 msgid "Paste ssr url here"
-msgstr ""
+msgstr "Paste ssr url here"
 
 msgid "Unable to copy SSR to clipboard."
-msgstr ""
+msgstr "Unable to copy SSR to clipboard."
 
 msgid "Copy SSR to clipboard successfully."
-msgstr ""
+msgstr "Copy SSR to clipboard successfully."
 
 msgid "Server Node Type"
-msgstr ""
+msgstr "Server Node Type"
 
 msgid "Using incorrect encryption mothod may causes service fail to start"
-msgstr ""
+msgstr "Using incorrect encryption mothod may causes service fail to start"
 
 msgid "Alias(optional)"
-msgstr ""
+msgstr "Alias(optional)"
 
 msgid "Network interface to use"
-msgstr ""
+msgstr "Network interface to use"
 
 msgid "Redirect traffic to this network interface"
-msgstr ""
+msgstr "Redirect traffic to this network interface"
 
 msgid "Server Address"
-msgstr ""
+msgstr "Server Address"
 
 msgid "Enable Authentication"
-msgstr ""
+msgstr "Enable Authentication"
 
 msgid "Username"
-msgstr ""
+msgstr "Username"
 
 msgid "Password"
-msgstr ""
+msgstr "Password"
 
 msgid "Encrypt Method"
-msgstr ""
+msgstr "Encrypt Method"
 
 msgid "Plugin"
-msgstr ""
+msgstr "Plugin"
 
 msgid "Plugin Opts"
-msgstr ""
+msgstr "Plugin Opts"
 
 msgid "Protocol"
-msgstr ""
+msgstr "Protocol"
 
 msgid "Protocol param(optional)"
-msgstr ""
+msgstr "Protocol param(optional)"
 
 msgid "Obfs"
-msgstr ""
+msgstr "Obfs"
 
 msgid "Obfs param(optional)"
-msgstr ""
+msgstr "Obfs param(optional)"
 
 msgid "VLESS Encryption"
-msgstr ""
+msgstr "VLESS Encryption"
 
 msgid "Transport"
-msgstr ""
+msgstr "Transport"
 
 msgid "allowInsecure"
-msgstr ""
+msgstr "allowInsecure"
 
-msgid "If true, allowss insecure connection at TLS client, e.g., TLS server uses unverifiable certificates."
+msgid ""
+"If true, allowss insecure connection at TLS client, e.g., TLS server uses "
+"unverifiable certificates."
 msgstr ""
+"If true, allowss insecure connection at TLS client, e.g., TLS server uses "
+"unverifiable certificates."
 
 msgid "Flow"
-msgstr ""
+msgstr "Flow"
 
 msgid "Concurrency"
-msgstr ""
+msgstr "Concurrency"
 
 msgid "Self-signed Certificate"
-msgstr ""
+msgstr "Self-signed Certificate"
 
 msgid "If you have a self-signed certificate,please check the box"
-msgstr ""
+msgstr "If you have a self-signed certificate,please check the box"
 
 msgid "upload"
-msgstr ""
+msgstr "upload"
 
 msgid "Upload"
-msgstr ""
+msgstr "Upload"
 
 msgid "Create upload file error"
-msgstr ""
+msgstr "Create upload file error"
 
 msgid "No specify upload file"
-msgstr ""
+msgstr "No specify upload file"
 
 msgid "Current Certificate Path"
-msgstr ""
+msgstr "Current Certificate Path"
 
 msgid "Please confirm the current certificate path"
-msgstr ""
+msgstr "Please confirm the current certificate path"
 
 msgid "TCP Fast Open"
-msgstr ""
+msgstr "TCP Fast Open"
 
 msgid "Enable Auto Switch"
-msgstr ""
+msgstr "Enable Auto Switch"
 
 msgid "Local Port"
-msgstr ""
+msgstr "Local Port"
 
 msgid "KcpTun Enable"
-msgstr ""
+msgstr "KcpTun Enable"
 
 msgid "KcpTun Port"
-msgstr ""
+msgstr "KcpTun Port"
 
 msgid "KcpTun Password"
-msgstr ""
+msgstr "KcpTun Password"
 
 msgid "KcpTun Param"
-msgstr ""
+msgstr "KcpTun Param"
 
 msgid "Access Control"
-msgstr ""
+msgstr "Access Control"
 
 msgid "IP Access Control"
-msgstr ""
+msgstr "IP Access Control"
 
 msgid "WAN IP AC"
-msgstr ""
+msgstr "WAN IP AC"
 
 msgid "WAN White List IP"
-msgstr ""
+msgstr "WAN White List IP"
 
 msgid "WAN Force Proxy IP"
-msgstr ""
+msgstr "WAN Force Proxy IP"
 
 msgid "LAN IP AC"
-msgstr ""
+msgstr "LAN IP AC"
 
 msgid "LAN Access Control"
-msgstr ""
+msgstr "LAN Access Control"
 
 msgid "Allow listed only"
-msgstr ""
+msgstr "Allow listed only"
 
 msgid "Allow all except listed"
-msgstr ""
+msgstr "Allow all except listed"
 
 msgid "LAN Host List"
-msgstr ""
+msgstr "LAN Host List"
 
 msgid "LAN Force Proxy Host List"
-msgstr ""
+msgstr "LAN Force Proxy Host List"
 
 msgid "Game Mode Host List"
-msgstr ""
+msgstr "Game Mode Host List"
 
 msgid "Domain List"
-msgstr ""
+msgstr "Domain List"
 
 msgid "Direct Domain List"
-msgstr ""
+msgstr "Direct Domain List"
 
 msgid "Proxy Domain List"
-msgstr ""
+msgstr "Proxy Domain List"
 
 msgid "These had been joined websites will not proxy."
-msgstr ""
+msgstr "These had been joined websites will not proxy."
 
 msgid "These had been joined websites will use proxy."
-msgstr ""
+msgstr "These had been joined websites will use proxy."
 
 msgid "Not valid domain name, please re-enter!"
-msgstr ""
+msgstr "Not valid domain name, please re-enter!"
 
 msgid "Netflix Domain List"
-msgstr ""
+msgstr "Netflix Domain List"
 
 msgid "Oversea Domain List"
-msgstr ""
+msgstr "Oversea Domain List"
 
 msgid "Preload domain(GFW Only)"
-msgstr ""
+msgstr "Preload domain(GFW Only)"
 
 msgid "Advanced Settings"
-msgstr ""
+msgstr "Advanced Settings"
 
 msgid "Server failsafe auto swith settings"
-msgstr ""
+msgstr "Server failsafe auto swith settings"
 
 msgid "Enable Process Deamon"
-msgstr ""
+msgstr "Enable Process Deamon"
 
 msgid "Switch check cycly(second)"
-msgstr ""
+msgstr "Switch check cycly(second)"
 
 msgid "Check timout(second)"
-msgstr ""
+msgstr "Check timout(second)"
 
 msgid "Check Try Count"
-msgstr ""
+msgstr "Check Try Count"
 
 msgid "Global SOCKS5 Proxy Server"
-msgstr ""
+msgstr "Global SOCKS5 Proxy Server"
 
 msgid "Server"
-msgstr ""
+msgstr "Server"
 
 msgid "SSR Server"
-msgstr ""
+msgstr "SSR Server"
 
 msgid "Global Setting"
-msgstr ""
+msgstr "Global Setting"
 
 msgid "Enable Server"
-msgstr ""
+msgstr "Enable Server"
 
 msgid "Server Setting"
-msgstr ""
+msgstr "Server Setting"
 
 msgid "Server Type"
-msgstr ""
+msgstr "Server Type"
 
 msgid "Encrypt Method (SS)"
-msgstr ""
+msgstr "Encrypt Method (SS)"
 
 msgid "Plugin (SS)"
-msgstr ""
+msgstr "Plugin (SS)"
 
 msgid "Warning! Please do not reuse the port!"
-msgstr ""
+msgstr "Warning! Please do not reuse the port!"
 
 msgid "Enable Once Auth Mode"
-msgstr ""
+msgstr "Enable Once Auth Mode"
 
-msgid "Enable Once Auth,the client IP that passed the authentication will be added to the whitelist address, this IP no longer needs to be verified"
+msgid ""
+"Enable Once Auth,the client IP that passed the authentication will be added "
+"to the whitelist address, this IP no longer needs to be verified"
 msgstr ""
+"Enable Once Auth,the client IP that passed the authentication will be added "
+"to the whitelist address, this IP no longer needs to be verified"
 
 msgid "Connection Timeout"
-msgstr ""
+msgstr "Connection Timeout"
 
 msgid "Unknown"
-msgstr ""
+msgstr "Unknown"
 
 msgid "Not exist"
-msgstr ""
+msgstr "Not exist"
 
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 msgid "Global Client"
-msgstr ""
+msgstr "Global Client"
 
 msgid "Running"
-msgstr ""
+msgstr "Running"
 
 msgid "Not Running"
-msgstr ""
+msgstr "Not Running"
 
 msgid "Game Mode UDP Relay"
-msgstr ""
+msgstr "Game Mode UDP Relay"
 
 msgid "Local Servers"
-msgstr ""
+msgstr "Local Servers"
 
 msgid "KcpTun Version"
-msgstr ""
+msgstr "KcpTun Version"
 
 msgid "Google Connectivity"
-msgstr ""
+msgstr "Google Connectivity"
 
 msgid "No Check"
-msgstr ""
+msgstr "No Check"
 
 msgid "Check..."
-msgstr ""
+msgstr "Check..."
 
 msgid "Connect OK"
-msgstr ""
+msgstr "Connect OK"
 
 msgid "Connect Error"
-msgstr ""
+msgstr "Connect Error"
 
 msgid "Check Connect"
-msgstr ""
+msgstr "Check Connect"
 
 msgid "Baidu Connectivity"
-msgstr ""
+msgstr "Baidu Connectivity"
 
 msgid "GFW List Data"
-msgstr ""
+msgstr "GFW List Data"
 
 msgid "Refresh Data"
-msgstr ""
+msgstr "Refresh Data"
 
 msgid "Records"
-msgstr ""
+msgstr "Records"
 
 msgid "Refresh..."
-msgstr ""
+msgstr "Refresh..."
 
 msgid "Refresh OK!"
-msgstr ""
+msgstr "Refresh OK!"
 
 msgid "Refresh Error!"
-msgstr ""
+msgstr "Refresh Error!"
 
 msgid "No new data!"
-msgstr ""
+msgstr "No new data!"
 
 msgid "Total Records:"
-msgstr ""
+msgstr "Total Records:"
 
 msgid "China IPv4 Data"
-msgstr ""
+msgstr "China IPv4 Data"
 
 msgid "China IPv6 Data"
-msgstr ""
+msgstr "China IPv6 Data"
 
 msgid "Check Server Port"
-msgstr ""
+msgstr "Check Server Port"
 
 msgid "Check Server"
-msgstr ""
+msgstr "Check Server"
 
 msgid "Log"
-msgstr ""
+msgstr "Log"
 
 msgid "Finger Print"
-msgstr ""
+msgstr "Finger Print"
 
 msgid "Shadowsocks2"
-msgstr ""
+msgstr "Shadowsocks2"
 
 msgid "From Share URL"
-msgstr ""
+msgstr "From Share URL"
 
 msgid "Build Share URL"
-msgstr ""
+msgstr "Build Share URL"
 
 msgid "Import Finished"
-msgstr ""
+msgstr "Import Finished"
 
 msgid "Not a supported scheme:"
-msgstr ""
+msgstr "Not a supported scheme:"
 
 msgid "Invalid Share URL Format"
-msgstr ""
+msgstr "Invalid Share URL Format"
 
 msgid "User cancelled"
-msgstr ""
+msgstr "User cancelled"
 
 msgid "Paste Share URL Here"
-msgstr ""
+msgstr "Paste Share URL Here"
 
 msgid "Unable share to clipboard"
-msgstr ""
+msgstr "Unable share to clipboard"
 
 msgid "Share to clipboard successfully"
-msgstr ""
+msgstr "Share to clipboard successfully"
 
 msgid "Faltal on get option:"
-msgstr ""
+msgstr "Faltal on get option:"
 
 msgid "Faltal on set option:"
-msgstr ""
+msgstr "Faltal on set option:"
 
 msgid "Check update"
-msgstr ""
+msgstr "Check update"
 
 msgid "Update..."
-msgstr ""
+msgstr "Update..."
 
 msgid "It is the latest version"
-msgstr ""
+msgstr "It is the latest version"
 
 msgid "Update successful"
-msgstr ""
+msgstr "Update successful"
 
 msgid "Click to update"
-msgstr ""
+msgstr "Click to update"
 
 msgid "Updating..."
-msgstr ""
+msgstr "Updating..."
 
 msgid "Unexpected error"
-msgstr ""
+msgstr "Unexpected error"
 
 msgid "Updating, are you sure to close?"
-msgstr ""
+msgstr "Updating, are you sure to close?"
 
 msgid "Downloading..."
-msgstr ""
+msgstr "Downloading..."
 
 msgid "Unpacking..."
-msgstr ""
+msgstr "Unpacking..."
 
 msgid "Moving..."
-msgstr ""
+msgstr "Moving..."
 
 msgid "App Update"
-msgstr ""
+msgstr "App Update"
 
 msgid "Please confirm that your firmware supports FPU."
-msgstr ""
+msgstr "Please confirm that your firmware supports FPU."
 
 msgid "Make sure there is enough space to install %s"
-msgstr ""
+msgstr "Make sure there is enough space to install %s"
 
 msgid "RUNNING"
-msgstr ""
+msgstr "RUNNING"
 
 msgid "NOT RUNNING"
-msgstr ""
+msgstr "NOT RUNNING"
 
 msgid "Working..."
-msgstr ""
+msgstr "Working..."
 
 msgid "Problem detected!"
-msgstr ""
+msgstr "Problem detected!"
 
 msgid "Very Fast"
-msgstr ""
+msgstr "Very Fast"
 
 msgid "Fast"
-msgstr ""
+msgstr "Fast"
 
 msgid "General"
-msgstr ""
+msgstr "General"
 
 msgid "Slow"
-msgstr ""
+msgstr "Slow"
 
 msgid "Very Slow"
-msgstr ""
+msgstr "Very Slow"
 
 msgid "Touch Check"
-msgstr ""
+msgstr "Touch Check"
 
 msgid "Socks5 Server"
-msgstr ""
+msgstr "Socks5 Server"
 
 msgid "Running Status"
-msgstr ""
+msgstr "Running Status"
 
 msgid "Baidu Connection"
-msgstr ""
+msgstr "Baidu Connection"
 
 msgid "Google Connection"
-msgstr ""
+msgstr "Google Connection"
 
 msgid "Node Check"
-msgstr ""
-
-msgid "Check..."
-msgstr ""
+msgstr "Node Check"
 
 msgid "Clear"
-msgstr ""
+msgstr "Clear"
 
 msgid "To Top"
-msgstr ""
+msgstr "To Top"
