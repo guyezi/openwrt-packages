@@ -1,0 +1,83 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: luci-app-ngrokc\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: 孤爺仔 <admin@guyezi.com>\n"
+"Language-Team: admin@guyezi.com\n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+msgid "Ngrok Settings"
+msgstr "Ngrok Settings"
+
+msgid "Ngrok"
+msgstr "Ngrok"
+
+msgid "Secure tunnels to localhost."
+msgstr "Secure tunnels to localhost."
+
+msgid "Enable"
+msgstr "Enable"
+
+msgid "Ngrok Host"
+msgstr "Ngrok Host"
+
+msgid "Ngrok Port"
+msgstr "Ngrok Port"
+
+msgid "Auth Token"
+msgstr "Auth Token"
+
+msgid "Type"
+msgstr "Type"
+
+msgid "Local Address"
+msgstr "Local Address"
+
+msgid "Local Port"
+msgstr "Local Port"
+
+msgid "Custom Domain"
+msgstr "Custom Domain"
+
+msgid "SubDomain"
+msgstr "SubDomain"
+
+msgid "Use Custom Domain"
+msgstr "Use Custom Domain"
+
+msgid "Add Addr Port"
+msgstr "Add Addr Port"
+
+msgid "Remote Port"
+msgstr "Remote Port"
+
+msgid "Please set your domain's CNAME or A record to the tunnel server."
+msgstr "Please set your domain's CNAME or A record to the tunnel server."
+
+msgid "Server"
+msgstr "Server"
+
+msgid "Servers"
+msgstr "Servers"
+
+msgid "Tunnels"
+msgstr "Tunnels"
+
+msgid "Details"
+msgstr "Details"
+
+msgid "Main Settings"
+msgstr "Main Settings"
+
+msgid "Check interval"
+msgstr "Check interval"
+
+msgid "Second(s). Set to 0 if you don't want to check"
+msgstr "Second(s). Set to 0 if you don't want to check"

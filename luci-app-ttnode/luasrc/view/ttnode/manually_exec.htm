@@ -24,19 +24,19 @@
 	}
 
 </style>
-<label class="cbi-value-title">保存设置</label>
+<label class="cbi-value-title"><%= translate("保存设置") %></label>
 <div class="cbi-value-field">
-	<input class="cbi-button cbi-button-reload" id="save" type="button" size="0" value="<%= translate("保存设置") %>">
+	<input class='cbi-button cbi-button-reload' id='save' type='button' size='0' value='<%= translate("保存设置") %>'>
 	<div class="cbi-value-description">
-		<span class="cbi-value-helpicon"><img src="/luci-static/resources/cbi/help.gif" alt="帮助"></span>
-		手动执行前请先保存设置
+		<span class="cbi-value-helpicon"><img src="/luci-static/resources/cbi/help.gif" alt="<%= translate('帮助') %>"></span>
+		<%= translate('手动执行前请先保存设置') %>
 	</div>
 </div>
 <%+cbi/valuefooter%>
 <%+cbi/valueheader%>
-<label class="cbi-value-title">手动执行</label>
+<label class="cbi-value-title"><%= translate('手动执行') %></label>
 <div class="cbi-value-field">
-	<input class="cbi-button cbi-button-reload" id="run" type="button" size="0" value="<%= translate("手动执行") %>">
+	<input class="cbi-button cbi-button-reload" id="run" type="button" size="0" value="<%= translate('手动执行') %>">
 </div>
 
 <%+cbi/valuefooter%>
@@ -86,7 +86,7 @@
 			tg_userid: tg_userid
 		}
 		jq("#save").attr("disabled", true);
-		jq("#save").val("正在保存......")
+		jq("#save").val("<%= translate('正在保存...')%>")
 		jq.ajax({
 			type: "post",
 			url: SAVE_URL + "?rev=" + Math.random(),
@@ -94,7 +94,7 @@
 			dataType: "json",
 			success: function (d) {
 				jq("#save").attr("disabled", false);
-				jq("#save").val("保存设置")
+				jq("#save").val("<%= translate('保存设置')%>")
 			}
 		});
 		return false;
@@ -103,14 +103,14 @@
 	jq("#run").click(function () {
 		//console.log(data);
 		jq("#run").attr("disabled", true);
-		jq("#run").val("正在执行......")
+		jq("#run").val("<%= translate('正在执行...')%>")
 		jq.ajax({
 			type: "get",
 			url: RUN_URL + "?rev=" + Math.random(),
 			dataType: "json",
 			success: function (d) {
 				jq("#run").attr("disabled", false);
-				jq("#run").val("手动执行")
+				jq("#run").val("<%= translate('手动执行')%>")
 				jq("#res_info").removeClass("hide")
 				jq("#res_info").html(marked(d.msg.replace(/🌟/g, "★")))
 

@@ -1,0 +1,145 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: luci-app-speederv2\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: 孤爺仔 <admin@guyezi.com>\n"
+"Language-Team: admin@guyezi.com\n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+msgid "speederv2-tunnel"
+msgstr "speederv2-tunnel"
+
+msgid "Settings"
+msgstr "Settings"
+
+msgid "Running Status"
+msgstr "Running Status"
+
+msgid "Invalid Binary File."
+msgstr "Invalid Binary File."
+
+msgid "Binary Version"
+msgstr "Binary Version"
+
+msgid "Build Time"
+msgstr "Build Time"
+
+msgid "RUNNING"
+msgstr "RUNNING"
+
+msgid "NOT RUNNING"
+msgstr "NOT RUNNING"
+
+msgid "Running Management"
+msgstr "Running Management"
+
+msgid "Configure"
+msgstr "Configure"
+
+msgid "Run Daemon as User"
+msgstr "Run Daemon as User"
+
+msgid "Disable"
+msgstr "Disable"
+
+msgid "Configure Management"
+msgstr "Configure Management"
+
+msgid "Edit Config"
+msgstr "Edit Config"
+
+msgid "Server"
+msgstr "Server"
+
+msgid "Local Listening"
+msgstr "Local Listening"
+
+msgid "Basic Settings"
+msgstr "Basic Settings"
+
+msgid "Alias"
+msgstr "Alias"
+
+msgid "Server IP"
+msgstr "Server IP"
+
+msgid "Server Port"
+msgstr "Server Port"
+
+msgid "Local Listening IP"
+msgstr "Local Listening IP"
+
+msgid "Local Listening Port"
+msgstr "Local Listening Port"
+
+msgid "Common Settings"
+msgstr "Common Settings"
+
+msgid "Key"
+msgstr "Key"
+
+msgid "Timeout"
+msgstr "Timeout"
+
+msgid "Report Interval"
+msgstr "Report Interval"
+
+msgid "Advanced Settings"
+msgstr "Advanced Settings"
+
+msgid "Mode"
+msgstr "Mode"
+
+msgid "Quene Len"
+msgstr "Quene Len"
+
+msgid "Jitter"
+msgstr "Jitter"
+
+msgid "Interval"
+msgstr "Interval"
+
+msgid "Random Drop"
+msgstr "Random Drop"
+
+msgid "Disable Obscure"
+msgstr "Disable Obscure"
+
+msgid "Developer Settings"
+msgstr "Developer Settings"
+
+msgid "FIFO Path"
+msgstr "FIFO Path"
+
+msgid "Decode Buffer"
+msgstr "Decode Buffer"
+
+msgid "Fix Latency"
+msgstr "Fix Latency"
+
+msgid "Delay Capacity"
+msgstr "Delay Capacity"
+
+msgid "Disable FEC"
+msgstr "Disable FEC"
+
+msgid "Socket Buffer"
+msgstr "Socket Buffer"
+
+msgid "Log Settings"
+msgstr "Log Settings"
+
+msgid "Log Level"
+msgstr "Log Level"
+
+msgid "Log Position"
+msgstr "Log Position"
+
+msgid "Disable Color"
+msgstr "Disable Color"

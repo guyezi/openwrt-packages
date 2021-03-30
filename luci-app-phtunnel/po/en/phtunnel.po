@@ -1,0 +1,40 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-phtunnel\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: 孤爺仔 <admin@guyezi.com>\n"
+"Language-Team: admin@guyezi.com\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+msgid "Phtunnel"
+msgstr "Phtunnel"
+
+msgid "Setup"
+msgstr "Setup"
+
+msgid "setup"
+msgstr "setup"
+
+msgid "Base setup"
+msgstr "Base setup"
+
+msgid "App ID"
+msgstr "App ID"
+
+msgid "App Key"
+msgstr "App Key"
+
+msgid "Server Address"
+msgstr "Server Address"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Log"
+msgstr "Log"

@@ -1,0 +1,135 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: \n"
+"Last-Translator: 孤爺仔 <admin@guyezi.com>\n"
+"Language-Team: none\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"X-Generator: Poedit 2.4.2\n"
+
+msgid "ttnode"
+msgstr "甜糖星愿"
+
+msgid "login"
+msgstr "登录"
+
+msgid "run"
+msgstr "执行"
+
+msgid "save"
+msgstr "保存"
+
+msgid "client"
+msgstr "客户端"
+
+msgid "Monday"
+msgstr "星期一"
+
+msgid "Tuesday"
+msgstr "星期二"
+
+msgid "Wednesday"
+msgstr "星期三"
+
+msgid "Thursday"
+msgstr "星期四"
+
+msgid "Friday"
+msgstr "星期五"
+
+msgid "Saturday"
+msgstr "星期六"
+
+msgid "Sunday"
+msgstr "星期天"
+
+msgid "ServerChan SCKEY"
+msgstr "Server酱 SCKEY"
+
+msgid "global"
+msgstr "全局模式"
+
+msgid "Can help you automatically collect the star wish of ttnode every day, and can specify the date to automatically withdraw every week!"
+msgstr "可以帮你每日自动收取甜糖心愿的星愿，并且可以指定日期每周自动提现!"
+
+msgid "Base"
+msgstr "基本设置"
+
+msgid "Account info"
+msgstr "账户信息"
+
+msgid "Auto acquisition switch"
+msgstr "自动采集开关"
+
+msgid "Auto run time"
+msgstr "自动运行时间"
+
+msgid "TTnode runs auto every day and starts to calculate the star wish at 1 a.m. every day."
+msgstr "每天自动运行时间，甜糖星愿每天凌晨1点开始计算星愿."
+
+msgid "Auto cash switch"
+msgstr "自动提现开关"
+
+msgid "Auto withdrawal date"
+msgstr "自动提现日期"
+
+msgid "Please choose a few days per week as the date of auto withdrawals."
+msgstr "请选择每周几作为自动提现日期."
+
+msgid "Wechat push, based on ServerChan service, please log in by yourself http://sc.ftqq.com/ Bind and get sckey"
+msgstr "微信推送，基于Server酱服务，请自行登录 http://sc.ftqq.com/ 绑定并获取 SCKEY"
+
+msgid "Telegram Bot Token"
+msgstr "Telegram机器人令牌"
+
+msgid "First, search the botfather robot on the Telegram, create a notification robot of your own, and get the token."
+msgstr "首先在Telegram上搜索BotFather机器人，创建一个属于自己的通知机器人，并获取Token."
+
+msgid "Telegram UserID"
+msgstr "Telegram 用户ID"
+
+msgid "Search for getuserIDbot robot on Telegram and get UserID."
+msgstr "在Telegram上搜索getuserIDbot机器人，获取UserID."
+
+msgid "User Name"
+msgstr "用户名"
+
+msgid "Verification Code"
+msgstr "验证码"
+
+msgid "Get Verification Code"
+msgstr "获取验证码"
+
+msgid "Login TTnode"
+msgstr "登录甜糖"
+
+msgid "Please fill in your mobile number"
+msgstr "请填写手机号"
+
+msgid "Resend in second"
+msgstr "秒后重新发送"
+
+msgid "Please fill in the verification code"
+msgstr "请填写验证码"
+
+msgid "Mobile phone number or verification code error"
+msgstr "手机号或者验证码错误"
+
+msgid "Save settings"
+msgstr "保存设置"
+
+msgid "Please save the settings before manual execution"
+msgstr "手动执行前请先保存设置"
+
+msgid "Manual execution"
+msgstr "手动执行"
+
+msgid "Saving..."
+msgstr "正在保存..."
+
+msgid "Executing..."
+msgstr "正在执行..."
