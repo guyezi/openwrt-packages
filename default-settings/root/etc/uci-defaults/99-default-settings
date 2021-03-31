@@ -25,6 +25,68 @@ uci set network.wan.proto='pppoe'
 #uci set
 uci commit network
 
+#Dnsmasq set
+grep -q log-facility /etc/dnsmasq.conf ||
+	echo "log-facility=/dev/null" >> /etc/dnsmasq.conf
+grep -q /etc/dnsmasq.d /etc/dnsmasq.conf ||
+	echo "conf-dir=/etc/dnsmasq.d" >> /etc/dnsmasq.conf
+
+#Profile set
+sed -i '/profile.d/d' /lib/upgrade/keep.d/base-files
+
+rm -rf /tmp/luci-*
+
+#Crontabs set
+sed -i '/S99opkg/d' /etc/crontabs/root
+echo "0 4 * * * sh /etc/rc.d/S99opkg >/tmp/opkgupdate.log 2>&1" >> /etc/crontabs/root
+
+#Uhttpd set
+uci set uhttpd.main.rfc1918_filter=0
+uci set uhttpd.main.redirect_https=0
+uci set uhttpd.main.max_connections='200'
+uci set uhttpd.main.max_requests='100'
+uci commit uhttpd
+
+echo $(uci get uhttpd.main.index_page) | grep -q "cgi-bin/luci" ||
+	uci -q add_list uhttpd.main.index_page='cgi-bin/luci' && uci commit uhttpd
+
+if [ ! -f /etc/config/placeholder ]; then
+
+	if [ $(uci get network.wan.ipv6) == 0 ]; then
+			uci set dhcp.@dnsmasq[0].filter_aaaa='1'
+			uci commit dhcp
+	else
+		uci set dhcp.@dnsmasq[0].filter_aaaa='0'
+		uci commit dhcp
+		#uci set turboacc.config.sfe_ipv6='1'
+		#uci commit turboacc
+	fi
+
+	  uci set network.@globals[0].packet_steering=1
+  uci commit network
+  
+  uci set dhcp.@dnsmasq[0].dns_redirect='1'
+  uci set dhcp.dnsmasq[0].allservers='1'
+  uci set dhcp.lan.force='1'
+  uci set dhcp.@dnsmasq[0].cachesize='1500'
+  uci set dhcp.lan.ra='hybrid'
+  uci set dhcp.lan.ndp='hybrid'
+  uci set dhcp.lan.dhcpv6='hybrid'
+  uci commit dhcp
+fi
+
+#Wget set
+[ -f /usr/bin/wget ] && 	
+	ln -s /usr/bin/wget /usr/bin/wget-ssl
+
+cp -R /www/cgi-bin/* /www/
+find /www -type d -exec chmod 755 {} \;
+chmod +x /www/luci
+
+sed -i "s/git-.*-\(.*\)/git-\1/g" /usr/lib/lua/luci/version.lua
+
+#ln -s /sbin/poweroff /sbin/shutdown
+
 # DHCP Switch Settings
 uci set dhcp.lan.start='2'
 uci set dhcp.lan.limit='254'

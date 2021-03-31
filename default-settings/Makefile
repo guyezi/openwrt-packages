@@ -12,9 +12,9 @@ PKG_RELEASE:=10
 PKG_LICENSE:=GPLv3
 PKG_LICENSE_FILES:=LICENSE
 
-PKG_BUILD_DIR := $(BUILD_DIR)/$(PKG_NAME)
+#PKG_BUILD_DIR := $(BUILD_DIR)/$(PKG_NAME)
 
-include $(INCLUDE_DIR)/package.mk
+#include $(INCLUDE_DIR)/package.mk
 
 define Package/default-settings
   SECTION:=luci
@@ -34,11 +34,15 @@ endef
 define Build/Compile
 endef
 
-define Package/default-settings/install
-	$(INSTALL_DIR) $(1)/etc/uci-defaults
-	$(INSTALL_BIN) ./files/zzz-default-settings $(1)/etc/uci-defaults/99-default-settings
-	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/i18n
-	po2lmo ./i18n/default.zh-cn.po $(1)/usr/lib/lua/luci/i18n/default.zh-cn.lmo
-endef
+#define Package/default-settings/install
+#	$(INSTALL_DIR) $(1)/etc/uci-defaults
+#	$(INSTALL_BIN) ./files/zzz-default-settings $(1)/etc/uci-defaults/99-default-settings
+#	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/i18n
+#	po2lmo ./i18n/default.zh-cn.po $(1)/usr/lib/lua/luci/i18n/default.zh-cn.lmo
+#endef
 
-$(eval $(call BuildPackage,default-settings))
+#$(eval $(call BuildPackage,default-settings))
+
+include $(TOPDIR)/feeds/luci/luci.mk
+
+# call BuildPackage - OpenWrt buildroot signature
