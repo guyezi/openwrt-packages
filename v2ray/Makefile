@@ -46,7 +46,7 @@ define Package/$(PKG_NAME)
   SECTION:=net
   CATEGORY:=Network
   SUBMENU:=Web Servers/Proxies
-  DEPENDS:=@BROKEN $(GO_ARCH_DEPENDS) +ca-bundle
+  DEPENDS:=@BROKEN $(GO_ARCH_DEPENDS) +ca-bundle +upx
 endef
 
 define Package/$(PKG_NAME)/config

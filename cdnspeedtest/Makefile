@@ -24,7 +24,7 @@ PKG_CONFIG_DEPENDS:= \
 	CONFIG_CDNSPEEDTEST_COMPRESS_GOPROXY \
 	CONFIG_CDNSPEEDTEST_COMPRESS_UPX
 
-PKG_BUILD_DEPENDS:=golang/host
+PKG_BUILD_DEPENDS:=golang/host upx/host
 PKG_BUILD_PARALLEL:=1
 PKG_USE_MIPS16:=0
 
@@ -39,7 +39,7 @@ define Package/cdnspeedtest
 	CATEGORY:=Network
 	TITLE:=Getting the fastest ips to your network of CDN
 	URL:=https://github.com/XIU2/CloudflareSpeedTest
-	DEPENDS:=$(GO_ARCH_DEPENDS)
+	DEPENDS:=$(GO_ARCH_DEPENDS) +upx
 endef
 
 define Package/cdnspeedtest/config

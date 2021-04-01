@@ -3,10 +3,9 @@
 #
 # This is free software, licensed under the MIT License.
 #
-
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=luci-app-syslog 
+PKG_NAME:=luci-app-syslog
 PKG_VERSION:=0.5
 PKG_RELEASE:=2
 LUCI_TITLE:=Advanced system log (tail, search)
@@ -16,4 +15,5 @@ PKG_LICENSE:=MIT
 
 #include ../../luci.mk
 include $(TOPDIR)/feeds/luci/luci.mk
+
 # call BuildPackage - OpenWrt buildroot signature

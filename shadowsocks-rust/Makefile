@@ -75,7 +75,7 @@ define Package/shadowsocks-rust/Default
     SUBMENU:=Web Servers/Proxies
     TITLE:=shadowsocks-rust $(1)
     URL:=https://github.com/shadowsocks/shadowsocks-rust
-    DEPENDS:=@(aarch64||arm||i386||mips||mipsel||x86_64) @USE_MUSL
+    DEPENDS:=@(aarch64||arm||i386||mips||mipsel||x86_64) @USE_MUSL +upx
   endef
 
   define Package/shadowsocks-rust-$(1)/config

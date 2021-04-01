@@ -178,24 +178,45 @@ e.remove("/tmp/smartdns")
 end
 end
 end
-if nixio.fs.access("/etc/config/openclash")then
-s:tab("openclashconf",translate("配置openclash"),translate("本页是配置/etc/config/openclash的文档内容。应用保存后自动重启生效"))
-conf=s:taboption("openclashconf",Value,"openclashconf",nil,translate("开头的数字符号（＃）或分号的每一行（;）被视为注释；删除（;）启用指定选项。"))
+if nixio.fs.access("/etc/config/filebrowser")then
+s:tab("filebrowserconf",translate("配置filebrowser"),translate("本页是配置/etc/config/filebrowser的文档内容。应用保存后自动重启生效"))
+conf=s:taboption("filebrowserconf",Value,"filebrowserconf",nil,translate("开头的数字符号（＃）或分号的每一行（;）被视为注释；删除（;）启用指定选项。"))
 conf.template="cbi/tvalue"
 conf.rows=20
 conf.wrap="off"
 conf.cfgvalue=function(t,t)
-return e.readfile("/etc/config/openclash")or""
+return e.readfile("/etc/config/filebrowser")or""
 end
 conf.write=function(a,a,t)
 if t then
 t=t:gsub("\r\n?","\n")
-e.writefile("/tmp/openclash",t)
-if(luci.sys.call("cmp -s /tmp/openclash /etc/config/openclash")==1)then
-e.writefile("/etc/config/openclash",t)
-luci.sys.call("/etc/init.d/openclash restart >/dev/null")
+e.writefile("/tmp/filebrowser",t)
+if(luci.sys.call("cmp -s /tmp/filebrowser /etc/config/filebrowser")==1)then
+e.writefile("/etc/config/filebrowser",t)
+luci.sys.call("/etc/init.d/filebrowser restart >/dev/null")
 end
-e.remove("/tmp/openclash")
+e.remove("/tmp/filebrowser")
+end
+end
+end
+if nixio.fs.access("/etc/gitea/app.ini")then
+s:tab("giteaapp",translate("配置gitea"),translate("本页是配置/etc/gitea/app.ini的文档内容。应用保存后自动重启生效"))
+conf=s:taboption("giteaapp",Value,"giteaapp",nil,translate("开头的数字符号（＃）或分号的每一行（;）被视为注释；删除（;）启用指定选项。"))
+conf.template="cbi/tvalue"
+conf.rows=20
+conf.wrap="off"
+conf.cfgvalue=function(t,t)
+return e.readfile("/etc/gitea/app.ini")or""
+end
+conf.write=function(a,a,t)
+if t then
+t=t:gsub("\r\n?","\n")
+e.writefile("/tmp/app.ini",t)
+if(luci.sys.call("cmp -s /tmp/app.ini /etc/gitea/app.ini")==1)then
+e.writefile("/etc/gitea/app.ini",t)
+luci.sys.call("/etc/init.d/gitea restart >/dev/null")
+end
+e.remove("/tmp/app.ini")
 end
 end
 end

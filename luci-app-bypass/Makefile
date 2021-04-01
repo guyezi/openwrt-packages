@@ -95,17 +95,17 @@ define Package/$(PKG_NAME)
 endef
 
 #define Build/Prepare
-	$(foreach po,$(wildcard ${CURDIR}/po/*/bypass.po), \
-		$(PO2LMO) $(po) $(PKG_BUILD_DIR)/$(patsubst %.po,%.lmo,$(notdir $(po)));)
+#	$(foreach po,$(wildcard ${CURDIR}/po/*/bypass.po), \
+#		$(PO2LMO) $(po) $(PKG_BUILD_DIR)/$(patsubst %.po,%.lmo,$(notdir $(po)));)
 #endef
 
 #define Build/Compile
 #endef
 
-define Package/$(PKG_NAME)/conffiles
-/etc/config/bypass
-/etc/bypass/
-endef
+#define Package/$(PKG_NAME)/conffiles
+#/etc/config/bypass
+#/etc/bypass/
+#endef
 
 #define Package/$(PKG_NAME)/install
 #	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/controller
@@ -148,3 +148,4 @@ endef
 
 include $(TOPDIR)/feeds/luci/luci.mk
 #$(eval $(call BuildPackage,$(PKG_NAME)))
+# call BuildPackage - OpenWrt buildroot signature

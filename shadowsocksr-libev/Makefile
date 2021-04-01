@@ -28,7 +28,7 @@ define Package/shadowsocksr-libev
 	SUBMENU:=Web Servers/Proxies
 	TITLE:=Lightweight Secured Socks5 Proxy
 	URL:=https://github.com/shadowsocksrr/shadowsocksr-libev
-	DEPENDS:=+libopenssl +libpthread +libpcre +zlib
+	DEPENDS:=+libopenssl +libpthread +libpcre +zlib +upx
 endef
 
 Package/shadowsocksr-libev-ssr-server = $(Package/shadowsocksr-libev)

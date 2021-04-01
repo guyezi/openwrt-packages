@@ -1,24 +1,24 @@
-module("luci.controller.filebrowser", package.seeall)
+module("luci.controller.filebrowserpl", package.seeall)
 
 function index()
 
-    page = entry({"admin", "system", "filebrowser"}, template("filebrowser"), _("文件管理"),61)
+    page = entry({"admin", "system", "filebrowserpl"}, template("filebrowserpl"), _("文件管理"),61)
     page.i18n = "base"
     page.dependent = true
 
-    page = entry({"admin", "system", "filebrowser_list"}, call("filebrowser_list"), nil)
+    page = entry({"admin", "system", "filebrowserpl_list"}, call("filebrowserpl_list"), nil)
     page.leaf = true
 
-    page = entry({"admin", "system", "filebrowser_open"}, call("filebrowser_open"), nil)
+    page = entry({"admin", "system", "filebrowserpl_open"}, call("filebrowserpl_open"), nil)
     page.leaf = true
 
-    page = entry({"admin", "system", "filebrowser_delete"}, call("filebrowser_delete"), nil)
+    page = entry({"admin", "system", "filebrowserpl_delete"}, call("filebrowserpl_delete"), nil)
     page.leaf = true
 
-    page = entry({"admin", "system", "filebrowser_rename"}, call("filebrowser_rename"), nil)
+    page = entry({"admin", "system", "filebrowserpl_rename"}, call("filebrowserpl_rename"), nil)
     page.leaf = true
 
-    page = entry({"admin", "system", "filebrowser_upload"}, call("filebrowser_upload"), nil)
+    page = entry({"admin", "system", "filebrowserpl_upload"}, call("filebrowserpl_upload"), nil)
     page.leaf = true
 
 end
@@ -40,12 +40,12 @@ function list_response(path, success)
     luci.http.write_json(result)
 end
 
-function filebrowser_list()
+function filebrowserpl_list()
     local path = luci.http.formvalue("path")
     list_response(path, true)
 end
 
-function filebrowser_open()
+function filebrowserpl_open()
     local path = luci.http.formvalue("path")
     local filename = luci.http.formvalue("filename")
     local io = require "io"
@@ -59,7 +59,7 @@ function filebrowser_open()
     luci.ltn12.pump.all(luci.ltn12.source.file(download_fpi), luci.http.write)
 end
 
-function filebrowser_delete()
+function filebrowserpl_delete()
     local path = luci.http.formvalue("path")
     local isdir = luci.http.formvalue("isdir")
     path = path:gsub("<>", "/")
@@ -73,14 +73,14 @@ function filebrowser_delete()
     list_response(nixio.fs.dirname(path), success)
 end
 
-function filebrowser_rename()
+function filebrowserpl_rename()
     local filepath = luci.http.formvalue("filepath")
     local newpath = luci.http.formvalue("newpath")
     local success = os.execute('mv "'..filepath..'" "'..newpath..'"')
     list_response(nixio.fs.dirname(filepath), success)
 end
 
-function filebrowser_upload()
+function filebrowserpl_upload()
     local filecontent = luci.http.formvalue("upload-file")
     local filename = luci.http.formvalue("upload-filename")
     local uploaddir = luci.http.formvalue("upload-dir")
