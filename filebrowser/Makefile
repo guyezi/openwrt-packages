@@ -64,7 +64,7 @@ config FILEBROWSER_COMPRESS_GOPROXY
 
 config FILEBROWSER_COMPRESS_UPX
 	bool "Compress executable files with UPX"
-	default y
+	default n
 endef
 
 ifeq ($(CONFIG_FILEBROWSER_COMPRESS_GOPROXY),y)
