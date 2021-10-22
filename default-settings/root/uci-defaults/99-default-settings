@@ -9,20 +9,19 @@ uci set system.@system[0].timezone=CST-8
 uci set system.@system[0].zonename=Asia/Shanghai
 uci commit system
 
-uci set fstab.@global[0].anon_mount=1
-uci commit fstab
+#uci set fstab.@global[0].anon_mount=1
+#uci commit fstab
 
 # Network IP Settings
-uci set network.lan.ipaddr='192.168.10.1'
-uci set network.lan.netmask='255.255.252.0'
+uci set network.lan.ipaddr='192.168.10.250'
+uci set network.lan.netmask='255.255.253.0'
 #uci set network.lan.ifname='eth0 eth1 eth2'
 #uci set network.wan6.ifname='eth5'
 #uci set network.wan.ifname='eth5'
 #uci set network.wan.username='ADSL@163.gd'
 #uci set network.wan.password='passwd'
 #uci set network.wan.proto='pppoe'
-#uci set
-#uci set
+uci delete network.@route[-1].interface=wan
 uci commit network
 
 # DHCP Switch Settings
@@ -37,17 +36,17 @@ uci commit dhcp
 #rm -f /usr/lib/lua/luci/view/admin_status/index/ddns.htm
 #rm -f /usr/lib/lua/luci/view/admin_status/index/minidlna.htm
 
-sed -i 's/\"services\"/\"nas\"/g' /usr/lib/lua/luci/controller/aria2.lua
-sed -i 's/services/nas/g' /usr/lib/lua/luci/view/aria2/overview_status.htm
-sed -i 's/\"services\"/\"nas\"/g' /usr/lib/lua/luci/controller/hd_idle.lua
-sed -i 's/\"services\"/\"nas\"/g' /usr/lib/lua/luci/controller/samba.lua
-sed -i 's/\"services\"/\"nas\"/g' /usr/lib/lua/luci/controller/minidlna.lua
-sed -i 's/\"services\"/\"nas\"/g' /usr/lib/lua/luci/controller/transmission.lua
-sed -i 's/\"services\"/\"nas\"/g' /usr/lib/lua/luci/controller/mjpg-streamer.lua
-sed -i 's/\"services\"/\"nas\"/g' /usr/lib/lua/luci/controller/p910nd.lua
-sed -i 's/\"services\"/\"nas\"/g' /usr/lib/lua/luci/controller/usb_printer.lua
-sed -i 's/\"services\"/\"nas\"/g' /usr/lib/lua/luci/controller/xunlei.lua
-sed -i 's/services/nas/g'  /usr/lib/lua/luci/view/minidlna_status.htm
+#sed -i 's/\"services\"/\"nas\"/g' /usr/lib/lua/luci/controller/aria2.lua
+#sed -i 's/services/nas/g' /usr/lib/lua/luci/view/aria2/overview_status.htm
+#sed -i 's/\"services\"/\"nas\"/g' /usr/lib/lua/luci/controller/hd_idle.lua
+#sed -i 's/\"services\"/\"nas\"/g' /usr/lib/lua/luci/controller/samba.lua
+#sed -i 's/\"services\"/\"nas\"/g' /usr/lib/lua/luci/controller/minidlna.lua
+#sed -i 's/\"services\"/\"nas\"/g' /usr/lib/lua/luci/controller/transmission.lua
+#sed -i 's/\"services\"/\"nas\"/g' /usr/lib/lua/luci/controller/mjpg-streamer.lua
+#sed -i 's/\"services\"/\"nas\"/g' /usr/lib/lua/luci/controller/p910nd.lua
+#sed -i 's/\"services\"/\"nas\"/g' /usr/lib/lua/luci/controller/usb_printer.lua
+#sed -i 's/\"services\"/\"nas\"/g' /usr/lib/lua/luci/controller/xunlei.lua
+#sed -i 's/services/nas/g'  /usr/lib/lua/luci/view/minidlna_status.htm
 
 ln -sf /sbin/ip /usr/bin/ip
 
@@ -65,12 +64,14 @@ sed -i 's/root::0:0:99999:7:::/root:$1$XxDu6KOc$GxuZ/R0J2syD0eoxCW.by0:0:0:99999
 
 # Firewall's Rules Settings
 sed -i '/REDIRECT --to-ports 53/d' /etc/firewall.user
-#echo "iptables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 53" >> /etc/firewall.user
-#echo "iptables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 53" >> /etc/firewall.user
-#echo "iptables -t nat -A PREROUTING -i pppoe-wan -p tcp -m tcp --dport 999 -j DNAT --to-destination 192.168.10.252:443" >> /etc/firewall.user
-#echo "iptables -t nat -A POSTROUTING -o br-lan -s 192.168.10.0/24 -d 192.168.10.252/32 -p tcp -m tcp --dport 22 -j SNAT --to-source 192.168.10.252" >> /etc/firewall.user
+echo 'iptables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 53' >> /etc/firewall.user
+echo 'iptables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 53' >> /etc/firewall.user
+echo '[ -n "$(command -v ip6tables)" ] && ip6tables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 53' >> /etc/firewall.user
+echo '[ -n "$(command -v ip6tables)" ] && ip6tables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 53' >> /etc/firewall.user
 
 # Wireless's Name Settings
+sed -i '/option disabled/d' /etc/config/wireless
+sed -i '/set wireless.radio${devidx}.disabled/d' /lib/wifi/mac80211.sh
 #sed -i '/option disabled/d' /etc/config/wireless
 #sed -i '/set wireless.radio${devidx}.disabled/d' /lib/wifi/mac80211.sh
 
@@ -85,7 +86,7 @@ sed -i '/log-facility/d' /etc/dnsmasq.conf
 echo "log-facility=/dev/null" >> /etc/dnsmasq.conf
 
 # Oth Settings
-sed -i 's/cbi.submit\"] = true/cbi.submit\"] = \"1\"/g' /usr/lib/lua/luci/dispatcher.lua
+#sed -i 's/cbi.submit\"] = true/cbi.submit\"] = \"1\"/g' /usr/lib/lua/luci/dispatcher.lua
 
 echo 'hsts=0' > /root/.wgetrc
 
